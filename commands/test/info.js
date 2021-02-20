@@ -2,10 +2,10 @@ const BaseCommand = require('../../utils/structures/BaseCommand');
 
 module.exports = class TestCommand extends BaseCommand {
   constructor() {
-    super('owner', 'botowner', []);
+    super('owner', 'Owner', []);
   }
 
   async run(client, message, args) {
-    message.reply("My owner is TheShadowyDev#6519!")
+    message.reply("My creator is TheShadowyDev#6519!")
   }
 }
