@@ -6,6 +6,6 @@ module.exports = class TestCommand extends BaseCommand {
   }
 
   async run(client, message, args) {
-    message.channel.reply("My owner is TheShadowyDev#6519!")
+    message.reply("My owner is TheShadowyDev#6519!")
   }
 }
