@@ -35,7 +35,7 @@ module.exports = class TestCommand extends BaseCommand {
           }
         ]
       };
-      channel.send({ embed });
+      message.channel.send({ embed });
   }
 }
 
