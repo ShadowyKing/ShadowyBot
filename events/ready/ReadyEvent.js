@@ -8,6 +8,4 @@ module.exports = class ReadyEvent extends BaseEvent {
     console.log(client.user.tag + ' has logged in.');
   }
 }
-client.onready;{
-  client.user.setActivity("s!", { type: "WATCHING"})
-}
+bot.user.setActivity("s!")
