@@ -14,7 +14,7 @@ module.exports = class TestCommand extends BaseCommand {
         "fields": [
           {
             "name": "No-Perm Commands",
-            "value": "help, discord, owner"
+            "value": "help, discord, owner, selfkick"
           },
           {
             "name": "Moderator Commands",
