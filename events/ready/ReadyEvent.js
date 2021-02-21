@@ -11,13 +11,7 @@ module.exports = class ReadyEvent extends BaseEvent {
     console.log(client.user.tag + ' has logged in.');
   }
 }
-client.on('ready', () => {
-  console.log('Bot: Hosting ' + `${client.users.size}` + ' users, in ' + `${client.channels.size}` + ' channels of ' + `${client.guilds.size}` + ' guilds.');
-      client.user.setStatus('online')
-      client.user.setPresence({
-          game: {
-              name: 'Use s!help',
-              type: "Watching",
-          }
-      });
+
+client.on("ready", () => {
+  client.user.setActivity(`s!help.`, {type: "playing"}); 
   });
