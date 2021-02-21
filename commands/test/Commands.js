@@ -18,7 +18,7 @@ module.exports = class TestCommand extends BaseCommand {
           },
           {
             "name": "Moderator Commands",
-            "value": "N/A"
+            "value": "Ban"
           }
         ]
       };
