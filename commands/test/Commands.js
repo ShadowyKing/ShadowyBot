@@ -7,7 +7,7 @@ module.exports = class TestCommand extends BaseCommand {
 
   async run(client, message, args) {
     const embed = {
-        "title": "Commands",
+        "title": "Commands (all commands are caps sensitive)",
         "footer": {
           "text": "Prefix is s!"
         },
@@ -18,7 +18,7 @@ module.exports = class TestCommand extends BaseCommand {
           },
           {
             "name": "Moderator Commands",
-            "value": "Ban"
+            "value": "ban"
           }
         ]
       };
