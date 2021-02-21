@@ -9,9 +9,6 @@ module.exports = class ReadyEvent extends BaseEvent {
   }
   async run (client) {
     console.log(client.user.tag + ' has logged in.');
+    client.user.setActivity("s!help");
   }
 }
-
-client.on("ready", () => {
-  client.user.setActivity(`s!help.`, {type: "playing"}); 
-  });
