@@ -11,4 +11,14 @@ module.exports = class ReadyEvent extends BaseEvent {
     console.log(client.user.tag + ' has logged in.');
   }
 }
-client.user.setActivity("s!")
+client.on('ready', () => {
+  console.log('Bot: Hosting ' + `${client.users.size}` + ' users, in ' + `${client.channels.size}` + ' channels of ' + `${client.guilds.size}` + ' guilds.');
+      client.user.setStatus('online')
+      client.user.setPresence({
+          game: {
+              name: 'Use s!help',
+              type: "Playing",
+              url: "https://discordapp.com/"
+          }
+      });
+  });
