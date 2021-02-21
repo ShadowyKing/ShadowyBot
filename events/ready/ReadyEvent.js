@@ -1,6 +1,7 @@
 const { DiscordAPIError } = require('discord.js');
 const BaseEvent = require('../../utils/structures/BaseEvent');
-const client = new discord.client();
+const Discord = require('discord.js');
+const client = new Discord.Client();
 
 module.exports = class ReadyEvent extends BaseEvent {
   constructor() {
