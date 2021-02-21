@@ -8,4 +8,4 @@ module.exports = class ReadyEvent extends BaseEvent {
     console.log(client.user.tag + ' has logged in.');
   }
 }
-bot.user.setActivity("s!")
+client.user.setActivity("s!")
