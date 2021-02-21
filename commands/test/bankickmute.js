@@ -11,7 +11,7 @@ module.exports = class TestCommand extends BaseCommand {
       if (!message.guild) return;
     
       // if the message content starts with "!ban"
-      if (!message.content.startsWith('!ban')) {
+      if (message.content.startsWith('s!ban')) {
         // Assuming we mention someone in the message, this will return the user
         const user = message.mentions.users.first();
         // If we have a user mentioned
