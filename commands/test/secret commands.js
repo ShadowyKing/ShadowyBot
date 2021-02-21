@@ -9,7 +9,7 @@ module.exports = class TestCommand extends BaseCommand {
   async run(client, message, args) {
       message.reply("Congrats you found a secret command, please check your dms and send my creator the code for reward!")
       message.delete()
-      user.dm("Code is: 3846129462508362")
+      message.author.send("Code is: 3846129462508362")
 
 
 
