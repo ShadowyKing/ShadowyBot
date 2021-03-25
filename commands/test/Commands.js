@@ -9,7 +9,7 @@ module.exports = class TestCommand extends BaseCommand {
     const embed = {
         "title": "Commands (all commands are caps sensitive)",
         "footer": {
-          "text": "Prefix is s!"
+          "text": "Prefix is s"
         },
         "fields": [
           {
