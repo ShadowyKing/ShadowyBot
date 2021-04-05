@@ -7,7 +7,7 @@ module.exports = class TestCommand extends BaseCommand {
   }
 
   async run(client, message, args) {
-     channel.message.send("My invite link is: http://bit.ly/InviteShadow")
+    message.reply("My invite link is: http://bit.ly/InviteShadow")
       }
 
    }
