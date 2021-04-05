@@ -8,11 +8,12 @@ module.exports = class TestCommand extends BaseCommand {
 
   async run(client, message, args) {
       if (message.author = "TheShadowyDev#6519"){
+        message.delete()
         message.channel.send("Hello, the code is in your dms!")
-        message.author.dm("FDSUIDSHYIGFSGYUYUG")
+        message.author.send("FDSUIDSHYIGFSGYUYUG")
       }
    else {
-    message.Channel.send("Dont try to trick me, you are not my creator!");
+    message.channel.send("Dont try to trick me, you are not my creator!");
    }
 
       
