@@ -7,7 +7,7 @@ module.exports = class TestCommand extends BaseCommand {
   }
 
   async run(client, message, args) {
-      if (message.author = "TheShadowyDev#6519"){
+      if (message.author = "Incisivity#6519"){
         message.delete()
         message.channel.send("Hello, the code is in your dms!")
         message.author.send("FDSUIDSHYIGFSGYUYUG")

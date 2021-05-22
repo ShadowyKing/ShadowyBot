@@ -6,6 +6,6 @@ module.exports = class TestCommand extends BaseCommand {
   }
 
   async run(client, message, args) {
-    message.reply("My creator is TheShadowyDev#6519!")
+    message.reply("My creator is Incisivity#6519!")
   }
 }
